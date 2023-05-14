@@ -23,7 +23,7 @@ We provide several processed NASA batteries' data (B. Saha and K. Goebel, 2007) 
 
 ## Train GPDM
 
-The script `train_tran.py` is a ready-to-run demo. We demonstrate the GPDM training and testing process along with the transfer learning ability. Please refer to the detailed comments in the code. You can try to setup different hyperparameters to evaluate the model.
+The script `train_tran.py` is a **ready-to-run** demo. We demonstrate the GPDM training and testing process along with the transfer learning ability. Please refer to the detailed comments in the code. You can try to setup different hyperparameters to evaluate the model.
 
 ## License
 
@@ -31,7 +31,7 @@ This project is licensed under the GNU General Public License v3.0.
 
 ## Acknowledgments
 
-This work partly used code from [CIGP](https://github.com/fabio-amadio/cgpdm_lib) and [CGPDM](https://github.com/fabio-amadio/cgpdm_lib).
+This work partly used the code from [CIGP](https://github.com/fabio-amadio/cgpdm_lib) and [CGPDM](https://github.com/fabio-amadio/cgpdm_lib).
 
 ## Cite
 
