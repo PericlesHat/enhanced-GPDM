@@ -23,7 +23,12 @@ We provide several processed NASA batteries' data (B. Saha and K. Goebel, 2007) 
 
 ## Train GPDM
 
-The script `train_tran.py` is a **ready-to-run** demo. We demonstrate the GPDM training and testing process along with the transfer learning ability. Please refer to the detailed comments in the code. You can try to setup different hyperparameters to evaluate the model.
+The script `train_tran.py` is a **ready-to-run** demo. We demonstrate the GPDM training and testing process along with the transfer learning ability. Please refer to the detailed comments in the code. 
+
+Try to setup different hyperparameters to evaluate the model:
+- `D`: observation space dimension (determined by observation data)
+- `Q`: desired latent space dimension, empirically $Q << D$
+- `dyn_target`: choose `full` or `delta`, `delta` models higher order feature by defining each latent point as $x_t - x_{t-1}$
 
 ## License
 
