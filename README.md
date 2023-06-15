@@ -4,7 +4,7 @@ We present enhanced Gaussian Process Dynamical Model (EGPDM), a Bayesian method 
 
 We also provide an original GPDM in [IceLab's repo](https://github.com/IceLab-X/Mini-GP).
 
-<img width="450" height="300" src="https://raw.githubusercontent.com/PericlesHat/modified-GPDM/main/assets/egpdm_nasa.png"/>
+<img width="900" height="300" src="https://raw.githubusercontent.com/PericlesHat/modified-GPDM/main/assets/egpdm_nasa.png"/>
 
 ## TO-DO
 
