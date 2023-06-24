@@ -29,9 +29,9 @@ We provide several processed NASA batteries' data (B. Saha and K. Goebel, 2007) 
 The script `train_tran.py` is a **ready-to-run** demo. We demonstrate the GPDM training and testing process along with the transfer learning ability. Please refer to the detailed comments in the code. 
 
 Try to setup different hyperparameters to evaluate the model:
-- `D`: observation space dimension (determined by observation data)
-- `Q`: desired latent space dimension, empirically $Q << D$
-- `dyn_target`: `full` or `delta`, `delta` models higher order feature by defining latent points as $x_t - x_{t-1}$
+- **D:** observation space dimension (determined by observation data)
+- **Q:** desired latent space dimension, empirically $Q << D$
+- **dyn_target:** `full` or `delta`, `delta` models higher order feature by defining latent points as $x_t - x_{t-1}$
 
 We offer linear, RBF, Matern3 and Matern5 kernel functions in the code. You can custom your desired kernels in `self.observationGP_kernel()` and `self.dynamicGP_kernel()` using linear combination of kernels.
 
