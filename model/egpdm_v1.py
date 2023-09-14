@@ -14,8 +14,8 @@ from sklearn.decomposition import PCA
 from torch.distributions.normal import Normal
 import matplotlib.pyplot as plt
 
-sigma_n_num_Y = 10 ** -3
-sigma_n_num_X = 10 ** -3
+sigma_n_num_Y = 10 ** -5
+sigma_n_num_X = 10 ** -5
 
 
 class EGPDM(torch.nn.Module):
@@ -96,11 +96,12 @@ class EGPDM(torch.nn.Module):
         print('Num. of sequences = ' + str(self.num_sequences) + ' [Data points = ' + str(
             np.concatenate(self.observations_list, 0).shape[0]) + ']')
 
-    def observationGP_kernel(self, X1, X2, flg_noise=False):
+    def observationGP_kernel(self, X1, X2, flg_noise=True):
         """
         currently use matern3 + matern5
         RBF also a good choice
         """
+        # return self.kernel_rbf(X1, X2, self.y_log_lengthscales, self.y_log_sigma_n, self.sigma_n_num_Y, flg_noise)
         return self.kernel_matern3(X1, X2, self.sigma_n_num_Y, flg_noise) + self.kernel_matern5(X1, X2, self.sigma_n_num_X, flg_noise)
 
     def dynamicGP_kernel(self, X1, X2, flg_noise=True):
@@ -520,7 +521,7 @@ if __name__ == "__main__":
     ## latent trajectories in 3D (only when Q=3)
     if Q == 3:
         fig = plt.figure()
-        ax = fig.gca(projection='3d')
+        ax = fig.add_subplot(projection='3d')  # fixed bug
         X = X_list[0]
         x = X[:, 0]
         y = X[:, 1]
