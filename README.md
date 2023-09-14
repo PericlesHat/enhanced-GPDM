@@ -9,7 +9,9 @@ We also provide an original GPDM and its tutorial in [IceLab's repo](https://git
 ## TO-DO
 
 - [x] add EGPDM model
-- [ ] fix bugs
+- [x] update: calculate the original RMSE instead of normalized
+- [x] fix bugs: 3D-trajectory plot; kernel noises
+- [ ] fix bugs: cycle limitation in LBFGS
 
 ## Prerequisites
 
