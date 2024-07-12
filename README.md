@@ -1,6 +1,6 @@
 # enhanced-GPDM
 
-We present enhanced Gaussian Process Dynamical Model (EGPDM), a Bayesian method used for capturing high-dimension data's dynamics and transfer learning ability. This repo is the official implementation of [Enhanced Gaussian Process Dynamical Models with Knowledge Transfer for Long-term Battery Degradation Forecasting](https://arxiv.org/abs/2212.01609). Our code is based on PyTorch with CUDA supported.
+We present enhanced Gaussian Process Dynamical Model (EGPDM), a Bayesian method used for capturing high-dimension data's dynamics and transfer learning ability. Our code is based on PyTorch with CUDA supported.
 
 We also provide an original GPDM and its tutorial in [IceLab's repo](https://github.com/IceLab-X/Mini-GP).
 
@@ -47,15 +47,3 @@ This project is licensed under the GNU General Public License v3.0.
 
 This work partly uses the code from [CIGP](https://github.com/IceLab-X/Mini-GP/blob/main/cigp_v14.py) and [CGPDM](https://github.com/fabio-amadio/cgpdm_lib).
 
-## Cite
-
-If you find our work useful, please cite our paper.
-```
-@article{xing2022enhanced,
-  title={Enhanced Gaussian Process Dynamical Models with Knowledge Transfer for Long-term Battery Degradation Forecasting},
-  author={Xing, Wei W and Zhang, Ziyang and Shah, Akeel A},
-  journal={arXiv e-prints},
-  pages={arXiv--2212},
-  year={2022}
-}
-```
