@@ -47,3 +47,16 @@ This project is licensed under the GNU General Public License v3.0.
 
 This work partly uses the code from [CIGP](https://github.com/IceLab-X/Mini-GP/blob/main/cigp_v14.py) and [CGPDM](https://github.com/fabio-amadio/cgpdm_lib).
 
+If you find our work useful, please cite:
+```
+@article{xing2025enhanced,
+  title={Enhanced Gaussian process dynamical modeling for battery health status forecasting},
+  author={Xing, WW and Zhang, Z and Shah, AA},
+  journal={Renewable and Sustainable Energy Reviews},
+  volume={208},
+  pages={115045},
+  year={2025},
+  publisher={Elsevier}
+}
+```
+
